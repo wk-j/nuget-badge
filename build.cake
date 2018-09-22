@@ -8,7 +8,7 @@ var npi = EnvironmentVariable("npi");
 var name = "NuGetBadge";
 
 var currentDir = new DirectoryInfo(".").FullName;
-var info = Parser.Parse($"src/{name}/{name}.csproj");
+var info = Parser.Parse($"src/{name}/{name}.fsproj");
 
 Task("Pack").Does(() => {
     CleanDirectory("publish");

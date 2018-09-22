@@ -5,6 +5,7 @@
     <PackageId>wk.NuGetBadge</PackageId>
     <ToolCommandName>wk-nuget-badge</ToolCommandName>
     <Version>0.1.0</Version>
+    <PackAsTool>true</PackAsTool>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Program.fs" />
