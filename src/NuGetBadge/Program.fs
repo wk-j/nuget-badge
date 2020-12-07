@@ -12,7 +12,12 @@ let main argv =
         "[![NuGet](https://img.shields.io/nuget/v/{id}.svg)](https://www.nuget.org/packages/{id})"
             .Replace("{id}", id)
 
+    let state =
+        "[![NuGet](https://buildstats.info/nuget/{id})](https://www.nuget.org/packages/{id}"
+            .Replace("{id}", id)
+
     template |> printfn "%s"
     download |> printfn "%s"
+    state |> printfn "%s"
 
     0
